@@ -1,66 +1,92 @@
+.banner_portfolio {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #204540;
+  color: #f2faf9;
+  margin: auto;
+}
+
+.título_portfolio {
+  gap: 1px;
+}
+
+.texto_portfolio {
+  gap: 1px;
+}
+
+.banner_icone {
+  width: 120px;
+  height: 120px;
+  justify-content: center;
+}
+
 .portfolio { 
-    width:100%; 
-    height:100%; 
-    background:#CCC;   
-    float:left;
-    margin-bottom:20px;  
-    position:relative; 
-    overflow:hidden;
-    border-radius:6px; 
+  width:10%; 
+  height:10%; 
+  background:#f2faf9;   
+  float:left;
+  margin-bottom:50px;  
+  position:relative; 
+  overflow:hidden;
+  border-radius:6px; 
 }
 .portfolio img { width:100%; height:100%; border-radius:6px; }
 .portfolio .portfolio_hover { 
-    z-index:2; 
-    width:100%; 
-    height:100%; 
-    position:absolute; 
-    top:-100%; 
-    left:0; 
-    background: rgba(0, 0, 0, 0.90);
-    border-radius:6px;  
-    transition:all 500ms; 
-    -moz-transition:all 500ms; 
-    -ms-transition:all 500ms; 
-    -o-transition:all 500ms; 
-    -webkit-transition:all 500ms;
+  width:100%; 
+  height:100%; 
+  position:absolute; 
+  top:-100%; 
+  left:0; 
+  background: rgba(0, 0, 0, 0.90);
+  border-radius:6px;  
+  transition:all 500ms; 
+  -moz-transition:all 500ms; 
+  -ms-transition:all 500ms; 
+  -o-transition:all 500ms; 
+  -webkit-transition:all 500ms;
 }
 .portfolio:hover .portfolio_hover { top:0;}
 .portfolio:hover .title { left:0;}
 .portfolio:hover .link  { left:0;}
-.portfolio img          { top:0; left:0; z-index:1;}
+.portfolio img          { top:0; left:0;}
 .title { 
-    font-family: Helvetica, sans-serif; 
-    position:absolute; 
-    top:35%; 
-    left:100%; 
-    z-index:3; 
-    color:#fff; 
-    text-align:center; 
-    width:100%; 
-    font-size:25px;
+  font-family: Helvetica, sans-serif; 
+  position:absolute; 
+  top:35%; 
+  left:100%; 
+  color:#fff; 
+  text-align:center; 
+  width:100%; 
+  font-size:77px;
 }
-.link { 
-    font-family: Helvetica, sans-serif; 
-    position:absolute; 
-    top:55%; 
-    left:-100%; 
-    z-index:3; 
-    color:#0adbdf; 
-    text-align:center; 
-    width:100%; 
-    font-size:16px;
-    text-decoration:none; 
-}
+
 .title,.link, .portfolio_hover{
-    transition:all 500ms; 
-    -moz-transition:all 500ms; 
-    -ms-transition:all 500ms; 
-    -o-transition:all 500ms; 
-    -webkit-transition:all 500ms;
+  transition:all 500ms; 
+  -moz-transition:all 500ms; 
+  -ms-transition:all 500ms; 
+  -o-transition:all 500ms; 
+  -webkit-transition:all 500ms;
 }
+
+.footer {
+  h4, h5 {
+    font-family: Helvetica, sans serif;
+  }
+
+
+
+}
+
 /*RESPONSIVO*/
 /*768PX BREAKPOINT*/
 @media (min-width:48em){
-    .portfolio {  width:32%; margin-right:2%; }
-    .portfolio:nth-of-type(3n+0) {  margin-right:0; }
+  .portfolio {  width:32%; margin-right:2%; }
+  .portfolio:nth-of-type(3n+0) {  margin-right:0; }
 }
+
+
+  
