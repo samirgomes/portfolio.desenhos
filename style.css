@@ -1,74 +1,106 @@
-*{
-  padding: 0;
+/* Reset CSS */
+* {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-body{
+
+/* Estilos globais */
+body {
+  font-family: 'Arial', sans-serif;
   background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
 }
-header{
-  background-image: linear-gradient(180deg, #204540, #778e77);
-  color: #F2F4F9;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+/* Estilos do cabeçalho */
+header {
+  background: linear-gradient(180deg, #204540, #778e77);
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
-header h1{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 7rem;
-  font-weight: 450px;
-  color: #F2F4F9;
+
+header h1 {
+  font-size: 3rem;
+  font-weight: bold;
 }
-.gallery-container{
+
+/* Estilos da galeria */
+.gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 2vw;
-  padding: 0 2vw;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
-.gallery-items{
-  width: 25%;
-  height: 25%;
-  border: 10px solid #FFF;
-  box-shadow: 5px 5px 5px #204540;
-  flex-grow: 1;
-  transition: transform .5s linear;
+
+.gallery-items {
+  flex: 0 0 calc(33.33% - 20px);
+  border: 5px solid #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
   position: relative;
 }
-.gallery-items img {
-  width: 25%;
-  height: 25%;
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
   object-fit: cover;
+  transition: opacity 0.3s ease-in-out;
 }
 
-.gallery-items:hover{
-  transform: scale(1.1);
+.gallery-items:hover {
+  transform: scale(1.05);
 }
 
-footer{
-  height: 100px;
-  padding: 2px;
-  margin: 2px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.gallery-items:hover img {
+  opacity: 0.8;
+}
+
+/* Estilos do rodapé */
+footer {
   background-color: #204540;
-  color: #F2F4F9;
-  font-size: 20px;
-  font-style: italic;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
 }
 
+footer p {
+  margin: 5px 0;
+}
+
+footer h5 {
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Media query para telas menores */
 @media (max-width: 768px) {
   header h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
-  
+
   .gallery-items {
-    width: 100%;
+    flex: 0 0 calc(50% - 20px);
   }
-  
+
   footer {
     font-size: 14px;
   }
 }
+
+
+
+
+  
